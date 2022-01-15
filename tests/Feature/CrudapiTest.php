@@ -4,7 +4,7 @@ namespace Tests\Feature;
 
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
-use Tests\TestCase;
+use Jwalbeli\Crudapi\Tests\TestCase;
 
 class CrudapiTest extends TestCase
 {
