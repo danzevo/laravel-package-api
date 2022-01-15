@@ -1,0 +1,19 @@
+{
+    "name": "jwalbeli/crudapi",
+    "description": "simple package for test crud api",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dani nugrahadi pradana",
+            "email": "dani.nugrahadi@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Jwalbeli\\Crudapi\\": "src/"
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
