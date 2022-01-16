@@ -2,6 +2,7 @@
 
 namespace Jwalbeli\Crudapi\Tests;
 use Jwalbeli\Crudapi\Crudapi;
+use Jwalbeli\Crudapi\DemoPackageServiceProvider;
 
 use Illuminate\Foundation\Testing\TestCase as BaseTestCase;
 
@@ -12,14 +13,15 @@ abstract class TestCase extends \Orchestra\Testbench\TestCase
   public function setUp(): void
   {
     parent::setUp();
+    $this->withoutExceptionHandling();
     // additional setup
   }
 
   protected function getPackageProviders($app)
   {
-    /* return [
-              'Acme\AcmeServiceProvider',
-    ]; */
+    return [
+              DemoPackageServiceProvider::class,
+    ];
   }
 
   protected function getEnvironmentSetUp($app)

@@ -17,6 +17,10 @@
     <include>
       <directory suffix=".php">src/</directory>
     </include>
+    <exclude>
+        <directory suffix=".php">./src/database</directory>
+        <file>./src/routes.php</file>
+    </exclude>
   </coverage>
   <testsuites>
     <testsuite name="Unit">
